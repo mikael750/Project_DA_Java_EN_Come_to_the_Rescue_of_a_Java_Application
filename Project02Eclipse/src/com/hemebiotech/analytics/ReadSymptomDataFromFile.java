@@ -28,6 +28,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		
 		if (filepath != null) {
 			try {
+				/**parcourir avec Buffer*/
 				BufferedReader reader = new BufferedReader (new FileReader(filepath));
 				String line = reader.readLine();
 				
