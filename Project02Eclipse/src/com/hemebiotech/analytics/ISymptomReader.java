@@ -11,11 +11,12 @@ import java.util.List;
  * 
  */
 public interface ISymptomReader {
+
 	/**
 	 * Si aucune donnée n'est disponible, retourner une liste vide.
 	 * 
 	 * @return une liste brute de tous les symptômes obtenus d'une source de données,
 	 * les doublons sont possibles/probables.
 	 */
-	List<String> GetSymptoms ();
+	List<String> GetSymptoms(String filepath);
 }

@@ -15,17 +15,16 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	private String filepath;
 	
 	/**
-	 * 
-	 * @param filepath un chemin complet ou partiel vers un fichier contenant des chaînes de symptômes, une par ligne
+	 *
 	 */
-	public ReadSymptomDataFromFile (String filepath) {
+	public ReadSymptomDataFromFile() {
 		this.filepath = filepath;
 	}
-	
+
 	@Override
-	public List<String> GetSymptoms() {
+	public List<String> GetSymptoms(String filepath) {
 		ArrayList<String> result = new ArrayList<String>();
-		
+		/**verifie si line est null à la premiere ligne de symptoms.txt*/
 		if (filepath != null) {
 			try {
 				/**parcourir avec Buffer*/
