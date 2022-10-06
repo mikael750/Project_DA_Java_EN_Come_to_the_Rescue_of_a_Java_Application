@@ -7,20 +7,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Simple brute force implementation
- *
+ * Contient la méthode permettant de lire un fichier et de et d'enregister son contenu dans une liste.
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
 	
-	/**
-	 *
-	 */
+
 	public ReadSymptomDataFromFile() {
 		this.filepath = filepath;
 	}
 
+	/**
+	 * Lire chaque ligne d'un fichier pour les mettre dans une liste.
+	 *
+	 * @param filepath le chemin du fichier lu.
+	 * @return liste contenant les éléments de filepath.
+	 * @throws IOException retourne une exception si le fichier n'existe pas ou à un problème de lecture de fichier.
+	 */
 	@Override
 	public List<String> GetSymptoms(String filepath) {
 		ArrayList<String> result = new ArrayList<String>();
