@@ -5,11 +5,10 @@ import java.util.TreeMap;
 
 public class AnalyticsCounter {
 
+
 	/**
-	 * @param args
-	 * @throws Exception
 	 */
-	public static void main(String args[]) throws Exception {
+	public void execute() {
 
 		ISymptomReader symptomsReader = new ReadSymptomDataFromFile("Project02Eclipse/symptoms.txt");
 		ISymptomWriter symptomsWriter = new WriteSymptomDataFromFile("result.out");
