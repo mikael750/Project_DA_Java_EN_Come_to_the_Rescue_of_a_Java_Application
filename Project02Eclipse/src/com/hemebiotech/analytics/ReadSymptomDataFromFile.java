@@ -14,19 +14,18 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	private String filepath;
 	
 
-	public ReadSymptomDataFromFile() {
+	public ReadSymptomDataFromFile(String filepath) {
 		this.filepath = filepath;
 	}
 
 	/**
 	 * Lire chaque ligne d'un fichier pour les mettre dans une liste.
 	 *
-	 * @param filepath le chemin du fichier lu.
 	 * @return liste contenant les éléments de filepath.
 	 * @throws IOException retourne une exception si le fichier n'existe pas ou à un problème de lecture de fichier.
 	 */
 	@Override
-	public List<String> GetSymptoms(String filepath) {
+	public List<String> GetSymptoms() {
 		ArrayList<String> result = new ArrayList<String>();
 		/**verifie si line est null à la premiere ligne de symptoms.txt*/
 		if (filepath != null) {
