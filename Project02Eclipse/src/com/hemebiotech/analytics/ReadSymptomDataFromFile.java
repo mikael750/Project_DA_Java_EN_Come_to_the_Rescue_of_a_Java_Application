@@ -7,30 +7,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Contient la méthode permettant de lire un fichier et de et d'enregister son contenu dans une liste.
+ * Contient la méthode GetSymptoms permettant de lire un fichier et d'enregister son contenu dans une liste.
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
-	
 
+	/**
+	 * @param filepath le fichier lu.
+	 */
 	public ReadSymptomDataFromFile(String filepath) {
 		this.filepath = filepath;
 	}
 
 	/**
-	 * Lire chaque ligne d'un fichier pour les mettre dans une liste.
-	 *
-	 * @return liste contenant les éléments de filepath.
-	 * @throws IOException retourne une exception si le fichier n'existe pas ou à un problème de lecture de fichier.
+	 * Lie chaque ligne d'un fichier pour les mettre dans une liste.
+	 * verifie si line est null à la premiere ligne de symptoms.txt
+	 * parcoure filepath avec un Buffer
+	 * @return une liste de tous les symptômes obtenus d'une source de données,les doublons sont present.
 	 */
 	@Override
-	public List<String> GetSymptoms() {
+	public List<String> GetSymptoms(){
 		ArrayList<String> result = new ArrayList<String>();
-		/**verifie si line est null à la premiere ligne de symptoms.txt*/
+
+
 		if (filepath != null) {
 			try {
-				/**parcourir avec Buffer*/
 				BufferedReader reader = new BufferedReader (new FileReader(filepath));
 				String line = reader.readLine();
 				

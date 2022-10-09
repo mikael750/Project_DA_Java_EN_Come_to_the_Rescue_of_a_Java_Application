@@ -7,6 +7,7 @@ public class AnalyticsCounter {
 
 
 	/**
+	 * genere la sortie result.out à partir de la liste symtoms.txt grace aux méthode
 	 */
 	public void execute() {
 
@@ -18,13 +19,7 @@ public class AnalyticsCounter {
 
 			List<String> list = symptomsReader.GetSymptoms();
 			TreeMap<String, Integer> symptoms = new TreeMap<>();
-			/**
-			 * @param list liste les symptômes d'une manière non classé.
-			 */
 			symptomOrder.OrderSymptom(list,symptoms);
-			/**
-			 * generate output
-			 */
 			symptomsWriter.WriteSymptom(symptoms);
 
 		}catch(Exception e){
