@@ -17,6 +17,7 @@ public class WriteSymptomDataFromFile implements ISymptomWriter {
 
 
     /**
+     * permettant d'ecrire une liste dans un fichier
      * @param symptoms les élèments de la liste
      */
     @Override

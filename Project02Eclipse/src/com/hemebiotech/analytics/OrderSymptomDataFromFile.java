@@ -8,9 +8,10 @@ public class OrderSymptomDataFromFile implements ISymptomOrder{
     /**
      * On parcours chaque ligne de symptoms pour compter leurs occurences.
      * @param list la liste des symptomes d'une manière non classé.
-     * @param symptoms les élèments de la liste
+     * @return symptoms les élèments de la liste
      */
-    public void OrderSymptom(List<String> list, TreeMap<String, Integer> symptoms){
+    public TreeMap<String, Integer> OrderSymptom(List<String> list){
+        TreeMap<String, Integer> symptoms = new TreeMap();
         try {
             for (String sym : list) {
                 if (symptoms.containsKey(sym)) {
@@ -24,5 +25,6 @@ public class OrderSymptomDataFromFile implements ISymptomOrder{
         }catch(Exception ex){
             ex.printStackTrace();
         }
+        return symptoms;
     }
 }

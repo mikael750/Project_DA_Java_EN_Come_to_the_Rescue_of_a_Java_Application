@@ -8,6 +8,6 @@ import java.util.TreeMap;
  */
 public interface ISymptomOrder {
 
-        void OrderSymptom(List<String> list, TreeMap<String, Integer> symptoms);
+        TreeMap<String, Integer> OrderSymptom(List<String> list);
 
 }

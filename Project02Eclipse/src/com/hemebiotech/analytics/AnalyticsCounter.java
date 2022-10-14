@@ -18,8 +18,7 @@ public class AnalyticsCounter {
 		try{
 
 			List<String> list = symptomsReader.GetSymptoms();
-			TreeMap<String, Integer> symptoms = new TreeMap<>();
-			symptomOrder.OrderSymptom(list,symptoms);
+			TreeMap<String, Integer> symptoms = symptomOrder.OrderSymptom(list);
 			symptomsWriter.WriteSymptom(symptoms);
 
 		}catch(Exception e){
