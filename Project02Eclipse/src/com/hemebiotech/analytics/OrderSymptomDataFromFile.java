@@ -3,6 +3,9 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.TreeMap;
 
+/**
+ * Contient la méthode OrderSymptom permettant d'ordonner une liste dans un fichier.
+ */
 public class OrderSymptomDataFromFile implements ISymptomOrder{
 
     /**
@@ -15,9 +18,9 @@ public class OrderSymptomDataFromFile implements ISymptomOrder{
         try {
             for (String sym : list) {
                 if (symptoms.containsKey(sym)) {
-                    int linevalue = symptoms.get(sym);
-                    linevalue++;
-                    symptoms.put(sym, linevalue);
+                    int lineValue = symptoms.get(sym);
+                    lineValue++;
+                    symptoms.put(sym, lineValue);
                 } else {
                     symptoms.put(sym, 1);
                 }
