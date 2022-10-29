@@ -7,7 +7,7 @@ public class AnalyticsCounter {
 
 
 	/**
-	 * genere la sortie result.out à partir de la liste symtoms.txt grace aux méthode
+	 * genere la sortie result.out a partir de la liste symtoms.txt grace aux methodes
 	 */
 	public void execute() {
 

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.TreeMap;
 
 /**
- * Interface donnant l'accés à la méthode OrderSymptom
+ * Interface donnant l'acces à la methode OrderSymptom
  */
 public interface ISymptomOrder {
 

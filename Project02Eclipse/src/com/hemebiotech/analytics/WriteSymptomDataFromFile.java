@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.util.TreeMap;
 
 /**
- * Contient la méthode WriteSymptom permettant d'ecrire une liste dans un fichier.
+ * Contient la methode WriteSymptom permettant d'ecrire une liste dans un fichier.
  */
 public class WriteSymptomDataFromFile implements ISymptomWriter {
 

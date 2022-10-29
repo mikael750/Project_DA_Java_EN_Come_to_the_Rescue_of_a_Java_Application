@@ -4,13 +4,13 @@ import java.util.List;
 import java.util.TreeMap;
 
 /**
- * Contient la méthode OrderSymptom permettant d'ordonner une liste dans un fichier.
+ * Contient la methode OrderSymptom permettant d'ordonner une liste dans un fichier.
  */
 public class OrderSymptomDataFromFile implements ISymptomOrder{
 
     /**
      * On parcours chaque ligne de symptoms pour compter leurs occurences.
-     * @param list la liste des symptomes d'une manière non classé.
+     * @param list la liste des symptomes d'une manière non classe.
      * @return symptoms les élèments de la liste
      */
     public TreeMap<String, Integer> OrderSymptom(List<String> list){

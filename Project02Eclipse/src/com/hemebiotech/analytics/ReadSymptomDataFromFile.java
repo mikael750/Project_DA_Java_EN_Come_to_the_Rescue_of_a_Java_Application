@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Contient la méthode GetSymptoms permettant de lire un fichier et d'enregister son contenu dans une liste.
+ * Contient la methode GetSymptoms permettant de lire un fichier et d'enregister son contenu dans une liste.
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
@@ -23,8 +23,8 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	/**
 	 * Lie chaque ligne d'un fichier pour les mettre dans une liste.
 	 * verifie si line est null à la premiere ligne de symptoms.txt
-	 * parcoure filepath avec un Buffer
-	 * @return une liste de tous les symptômes obtenus d'une source de données,les doublons sont present.
+	 * parcours filepath avec un Buffer
+	 * @return une liste de tous les symptomes obtenus d'une source de donnees,les doublons sont present.
 	 */
 	@Override
 	public List<String> GetSymptoms(){

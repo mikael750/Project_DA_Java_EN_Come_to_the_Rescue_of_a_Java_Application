@@ -10,7 +10,7 @@ public class Program {
     static AnalyticsCounter process = new AnalyticsCounter();
 
     /**
-     * La méthode main démarre le programme en appellent execute
+     * La methode main demarre le programme en appellent execute
      *
      * @param args
      */
